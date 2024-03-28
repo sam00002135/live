@@ -6,7 +6,6 @@ import { Toaster } from 'sonner';
 import './globals.css'
 import { Analytics } from "@vercel/analytics/react"
 import { ThemeProvider } from '@/components/theme-provider'
-import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -26,7 +25,7 @@ export default function RootLayout({
 
             <Toaster theme="light" position="bottom-center" />
             {children}
-              <Analytics />
+            <Analytics />
         </body>
       </html>
     </ClerkProvider>
