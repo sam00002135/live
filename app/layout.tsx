@@ -6,7 +6,7 @@ import { Toaster } from 'sonner';
 import './globals.css'
 import { Analytics } from "@vercel/analytics/react"
 import { ThemeProvider } from '@/components/theme-provider'
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -32,6 +32,7 @@ export default function RootLayout({
             {children}
           </ThemeProvider>
           < Analytics />
+          <SpeedInsights />
         </body>
       </html>
     </ClerkProvider>
